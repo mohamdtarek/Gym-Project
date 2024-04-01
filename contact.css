@@ -1,0 +1,116 @@
+body {
+    background-color: #222224;
+}
+
+
+.support {
+    width: 100%;
+    padding: 40px 10px;
+}
+
+.support .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 0;
+    color: white;
+
+}
+
+.support .heading {
+    margin: 0 auto;
+    text-align: center;
+    align-items: center;
+}
+
+.support .heading h1 {
+    font-size: 35px;
+    color: hsl(120, 100%, 40%);
+}
+
+.support .container .left {
+    width: 100%;
+    height: 100%;
+}
+
+.support .container .left img {
+    width: 100%;
+    height: 700px;
+    object-fit: cover;
+}
+
+.support .container .right {
+    width: 100%;
+    height: 100%;
+}
+
+.support .container input {
+    width: 75%;
+}
+
+#option {
+    padding: 10px 60px;
+    margin: 15px 0;
+    width: fit-content;
+    border: 1px solid hsl(120, 100%, 40%);
+    ;
+}
+
+#option p {
+    text-align: left;
+    border: 1px solid hsl(120, 100%, 40%);
+    margin: 13px 0;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+
+#textarea {
+    height: 50px;
+}
+
+.comment p {
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+.comment button {
+    margin: 5px 0;
+    padding: 10px 20px;
+    background-color: hsl(120, 100%, 40%);
+    color: white;
+    text-transform: capitalize;
+    border: none;
+}
+
+
+
+
+
+
+
+
+
+footer {
+    background-color: hsl(240, 3%, 24%);
+    padding: 30px 10px;
+}
+
+footer .container {
+    text-align: left;
+}
+
+footer .container ul {
+    padding-left: 0;
+}
+
+
+@media (min-width:1024px) {
+    .support .container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        margin: 0;
+        color: white;
+        gap: 20px;
+    }
+}

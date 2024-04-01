@@ -1,0 +1,107 @@
+body {
+    background-color: #222224;
+}
+
+
+
+.login {
+    width: 40%;
+
+    height: calc(100dvh - 151px);
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.login .container {
+    background-color: white;
+    padding: 10px;
+    border: 1px solid hsl(120, 100%, 40%);
+    border-radius: 36px;
+    height: 60%;
+}
+
+.login .container p {
+    color: black;
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.login .container input {
+    width: 100%;
+    font-size: 15px;
+    padding: 10px;
+}
+
+.login .container span {
+    position: relative;
+    top: 2rem;
+    padding: 0 40px;
+    color: black;
+    cursor: pointer;
+}
+
+.login .container a {
+    text-decoration: none;
+    padding: 0 40px;
+    color: hsl(120, 100%, 40%);
+    cursor: pointer;
+}
+
+
+.login .container .heading h1 {
+    color: hsl(120, 100%, 40%);
+    padding-bottom: 10px;
+    margin: 0 auto;
+    width: fit-content;
+    border-bottom: 1px solid #064789;
+}
+
+.login .container button {
+    padding: 10px 30px;
+    margin: 10px 0;
+    border: none;
+    background-color: hsl(120, 100%, 40%);
+    color: white;
+    transition: 1s;
+}
+
+.login .container button:hover {
+    background-color: white;
+    color: hsl(120, 100%, 40%);
+}
+
+
+@media (min-width:200px) and (max-width:1020px) {
+    .login {
+        width: 100%;
+    }
+
+    .login .container {
+        padding: 0;
+        height: fit-content;
+    }
+
+    .login .container a {
+        font-size: 15px;
+        padding: 0;
+    }
+
+    .login .container span {
+        padding: 0;
+    }
+}
+
+@media (min-width:1024px) {
+    .login .container {
+        height: fit-content;
+        padding: 0;
+    }
+
+    .login .container a {
+        padding: 0;
+        font-size: 15px;
+    }
+}

@@ -1,0 +1,148 @@
+.about {
+    padding: 40px 0;
+    position: relative;
+    width: 100%;
+    background-color: #222224;
+    margin: 5px 0;
+}
+
+.about .container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 20px auto;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    gap: 30px;
+    color: white;
+
+}
+
+.about .container .one {
+    padding: 0;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.about .container span {
+    position: relative;
+    display: inline-flex;
+    color: hsl(120, 100%, 40%);
+    text-align: right;
+    left: 20rem;
+    font-size: 25px;
+    top: 1rem;
+}
+
+.about .container .one:hover {
+    background-color: hsl(120, 100%, 40%);
+}
+
+.about .container .one:hover span {
+    color: white;
+}
+
+.about .container .one:hover h3 {
+    color: white;
+}
+
+.about .container h3 {
+    font-size: 20px;
+    padding-top: 10px;
+    padding-left: 10px;
+    color: hsl(120, 100%, 40%);
+}
+
+.about .container p {
+    color: #ccc;
+    padding-bottom: 10px;
+    padding-left: 10px;
+}
+
+.container .one img {
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+}
+
+
+@media (min-width:199px) and (max-width:299px) {
+    .about .container {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .container .one img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .about .container span {
+        left: 6rem;
+    }
+
+    .copy-right p {
+        font-size: 14px;
+    }
+}
+
+@media (min-width:300px) and (max-width:699px) {
+    header .container {
+        padding: 0 10px;
+    }
+
+    .about .container {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .container .one img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .about .container span {
+        left: 50%;
+    }
+
+    .copy-right p {
+        font-size: 15px;
+    }
+}
+
+@media (min-width:768px) and (max-width:999px) {
+    .about .container {
+        grid-template-columns: 1fr;
+    }
+
+    .container .one img {
+        width: 100%;
+    }
+
+    .about .container span {
+        left: 34rem;
+    }
+}
+
+@media (min-width:1023px) and (max-width:1599px) {
+    .about .container {
+        grid-template-columns: 1fr;
+    }
+
+    .about .container span {
+        left: 48rem;
+    }
+
+    .container .one img {
+        width: 100%;
+    }
+}
+
+@media (min-width:500px) and (max-width:700px) {
+    .about .container span {
+        left: 60%;
+    }
+}
